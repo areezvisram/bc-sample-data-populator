@@ -23,5 +23,8 @@ module BcSampleDataPopulator
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.content_security_policy do |policy|
+      policy.frame_ancestors :self, 'https://store-jxaxt21xit.mybigcommerce.com/'
+    end
   end
 end
