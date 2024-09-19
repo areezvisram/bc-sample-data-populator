@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-    # # If the request is not already at the BigCommerce auth path, redirect
+    # If the request is not already at the BigCommerce auth path, redirect
     unless request.path == "/auth/bigcommerce"
       redirect_to "/auth/bigcommerce"
     end
@@ -12,6 +12,9 @@ class SessionsController < ApplicationController
     session[:access_token] = auth['credentials']['token']
     session[:store_hash] = auth['extra']['context'].split('/').last
 
-    redirect_to root_path
+    # BigCommerceClient.new(session[:access_token], session[:store_hash])
+    debugger
+
+    redirect_to products_path
   end
 end

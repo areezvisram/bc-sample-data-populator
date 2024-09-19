@@ -1,7 +1,10 @@
 class ProductsController < ApplicationController
   def index
+    puts "I am calling index"
+    debugger
     client = BigCommerceClient.new(session[:access_token], session[:store_hash])
     @products = client.get_products
+    # puts @products
   end
 
   def create

@@ -1,3 +1,4 @@
+require 'jwt'
 class AppController < ApplicationController
   def index
   end
