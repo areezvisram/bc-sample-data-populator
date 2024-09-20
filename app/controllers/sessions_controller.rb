@@ -7,13 +7,16 @@ class SessionsController < ApplicationController
   end
   def create
     auth = request.env["omniauth.auth"]
-    Rails.logger.info "Auth hash: #{auth.inspect}" 
+    Rails.logger.info "Auth hash: #{auth.inspect}"
     
-    session[:access_token] = auth['credentials']['token']
-    session[:store_hash] = auth['extra']['context'].split('/').last
+    access_token = auth['credentials']['token'].token
+    store_hash = auth['extra']['context'].split('/').last
+    store_owner = auth['info']['email']
 
-    # BigCommerceClient.new(session[:access_token], session[:store_hash])
-    debugger
+    credential = BigCommerceCredential.find_or_initialize_by(store_hash: store_hash)
+    credential.update(access_token: access_token, store_owner: store_owner)
+
+    session[:bigcommerce_credential_id] = credential.id
 
     redirect_to products_path
   end

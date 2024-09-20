@@ -40,7 +40,7 @@ class BigCommerceClient
     headers = {
       'Accept' => 'application/json',
       'Content-Type' => 'application/json',
-      'X-Auth-Token' => 'f4d8gwgjf816w7ur7sev6995uz63x27'
+      'X-Auth-Token' => @access_token
     }
     response = HTTParty.get(url, headers: headers)
 
