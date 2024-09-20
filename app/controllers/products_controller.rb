@@ -1,22 +1,19 @@
 class ProductsController < ApplicationController
   def index
-    puts "I am calling index"
-    debugger
     client = BigCommerceClient.new(session[:access_token], session[:store_hash])
     @products = client.get_products
     # puts @products
   end
 
   def create
-    client = BigCommerceClient.new(session[:access_token], session[:store_hash])
-    product_params = {
-      name: 'Sample Product',
-      type: 'physical',
-      price: 19.99,
-      weight: 1.2,
-      categories: [1]
-    }
-    client.create_product(product_params)
-    redirect_to products_path
+    sample_data_generator = SampleDataGenerator.new(nil)
+    sample_products = sample_data_generator.generate_sample_products
+    debugger
+    # sample_products.each do |product_params|
+    #   puts product_params
+    # end
+    # client = BigCommerceClient.new(session[:access_token], session[:store_hash])
+    # client.create_product(product_payload)
+    # redirect_to products_path
   end
 end

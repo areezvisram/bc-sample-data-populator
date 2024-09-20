@@ -70,3 +70,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "tailwindcss-rails", "~> 2.7"
+
+gem "shadcn-ui", "~> 0.0.15"

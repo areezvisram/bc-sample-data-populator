@@ -1,0 +1,161 @@
+products:
+  - name: "Premium Leather Jacket"
+    sku: "PLJ-2024"
+    price: 249.99
+    weight: 1.5
+    description: "A sleek and stylish premium leather jacket, perfect for any season."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 50
+    inventory_warning_level: 5
+    width: 20.0
+    height: 30.0
+    depth: 5.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "Ships within 24 hours"
+    condition: "New"
+    brand_id: 34
+    categories: [23]
+    images:
+      - image_url: "https://example.com/jacket-front.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/jacket-back.jpg"
+    variants:
+      - sku: "PLJ-2024-BLACK-M"
+        option_values:
+          - option_display_name: "Color"
+            label: "Black"
+          - option_display_name: "Size"
+            label: "M"
+        price: 249.99
+        weight: 1.5
+        inventory_level: 20
+      - sku: "PLJ-2024-BLACK-L"
+        option_values:
+          - option_display_name: "Color"
+            label: "Black"
+          - option_display_name: "Size"
+            label: "L"
+        price: 249.99
+        weight: 1.6
+        inventory_level: 15
+      - sku: "PLJ-2024-BROWN-M"
+        option_values:
+          - option_display_name: "Color"
+            label: "Brown"
+          - option_display_name: "Size"
+            label: "M"
+        price: 249.99
+        weight: 1.5
+        inventory_level: 10
+    options:
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "Black"
+          - label: "Brown"
+      - name: "Size"
+        type: "dropdown"
+        option_values:
+          - label: "M"
+          - label: "L"
+          - label: "XL"
+  - name: "Stainless Steel Kitchen Knife Set"
+    sku: "SSKKS-1001"
+    price: 89.99
+    weight: 2.5
+    description: "Professional-grade stainless steel kitchen knife set, ideal for chefs and home cooks alike."
+    type: "physical"
+    inventory_tracking: "none"
+    inventory_level: 150
+    inventory_warning_level: 10
+    width: 15.0
+    height: 10.0
+    depth: 8.0
+    is_visible: true
+    is_featured: false
+    availability: "available"
+    availability_description: "Ships in 48 hours"
+    condition: "New"
+    brand_id: 37
+    categories: [21, 23]
+    images:
+      - image_url: "https://example.com/knife-set.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/knife-set-closeup.jpg"
+    options:
+      - name: "Handle Color"
+        type: "dropdown"
+        option_values:
+          - label: "Black"
+          - label: "Wooden"
+    variants:
+      - sku: "SSKKS-1001-BLACK"
+        option_values:
+          - option_display_name: "Handle Color"
+            label: "Black"
+        price: 89.99
+        weight: 2.5
+        inventory_level: 100
+      - sku: "SSKKS-1001-WOOD"
+        option_values:
+          - option_display_name: "Handle Color"
+            label: "Wooden"
+        price: 94.99
+        weight: 2.7
+        inventory_level: 50
+  - name: "Organic Cotton Bath Towel Set"
+    sku: "OCBTS-2002"
+    price: 59.99
+    weight: 1.2
+    description: "Luxuriously soft and absorbent organic cotton bath towel set, available in multiple colors."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 300
+    inventory_warning_level: 20
+    width: 12.0
+    height: 8.0
+    depth: 4.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "In stock, ships within 24 hours"
+    condition: "New"
+    brand_id: 36
+    categories: [18, 23]  # Bath, Shop All
+    images:
+      - image_url: "https://example.com/towel-set-white.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/towel-set-gray.jpg"
+    options:
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "White"
+          - label: "Gray"
+          - label: "Beige"
+    variants:
+      - sku: "OCBTS-2002-WHITE"
+        option_values:
+          - option_display_name: "Color"
+            label: "White"
+        price: 59.99
+        weight: 1.2
+        inventory_level: 100
+      - sku: "OCBTS-2002-GRAY"
+        option_values:
+          - option_display_name: "Color"
+            label: "Gray"
+        price: 59.99
+        weight: 1.2
+        inventory_level: 100
+      - sku: "OCBTS-2002-BEIGE"
+        option_values:
+          - option_display_name: "Color"
+            label: "Beige"
+        price: 64.99
+        weight: 1.3
+        inventory_level: 100
+

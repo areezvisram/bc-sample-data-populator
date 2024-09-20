@@ -13,8 +13,6 @@ class AppController < ApplicationController
     
     credential = BigCommerceCredential.find_by(store_hash: store_hash)
 
-    debugger
-
     if credential
       # Could take out this check to allow all users on the store to use the app
       if credential.store_owner == owner_email        
@@ -22,9 +20,7 @@ class AppController < ApplicationController
         session[:access_token] = credential.access_token
         session[:store_hash] = credential.store_hash
 
-        debugger
-
-        redirect_to products_path
+        redirect_to root_path, notice: 'Successfully loaded the app.'
       else
         redirect_to root_path, alert: 'Unauthorized User.'
       end
