@@ -1,35 +1,58 @@
-<% @tracks = [
-  {title: "Total Eclipse of the Heart", artist: "Bonnie Tyler"},
-  {title: "I Will Always Love You", artist: "Whitney Houston"},
-  {title: "I Wanna Dance with Somebody", artist: "Whitney Houston"},
-  {title: "I Will Survive", artist: "Gloria Gaynor"},
-  {title: "My Heart Will Go On", artist: "Celine Dion"},
-] %>
+<div class="flex flex-col items-center w-1/2 mx-auto mt-20">
+  <div class="text-xl font-bold">Generate Sample Data</div>
+  <%= render_alert(variant: :attention, title:'Note', description: "This app will generate a selected set of items in this store. This data should be used for testing and development purposes only and is not intended for production stores") %>
+  <%= link_to 'View Products', products_path %>
+  <%= link_to 'Create Product', products_create_path %>
 
-<%= render_table do %>
-  <%= table_head do %>
-    <%= table_header "", class: "w-1" %>
-    <%= table_header class: "" do %>
-      Title
-    <% end %>
-    <%= table_header "Artist" %>
-  <% end %>
-  <%= table_body do %>
-    <% @tracks.each.with_index do |track, i| %>
-      <%= table_row do %>
-        <%= table_column do %>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polygon points="10 8 16 12 10 16 10 8"></polygon>
-          </svg>
+  <%= form_with url: resources_path, method: :post, local: true, data: { turbo: false } do %>
+    <%= render_table do %>
+      <%= table_head do %>
+        <%= table_header class: "border-r border-gray-300" do %>
+          <%= check_box_tag "select_all", nil, false, id: "select_all_checkbox" %>
         <% end %>
-        <%= table_column do %>
-          <%= track[:title] %>
+        <%= table_header "Resource", class: "border-r border-gray-300" %>
+        <%= table_header "Description", class: "description-column" %>
+      <% end %>
+      <%= table_body do %>
+        <%= table_row do %>
+          <%= table_column do %>
+            <%= check_box_tag "selected_resources[]", "products", false, id: "product_checkbox" %>
+          <% end %>
+          <%= table_column "Products" %>
+          <%= table_column "15 products with multiple variants" %>
         <% end %>
-        <%= table_column track[:artist] %>
+        <%= table_row do %>
+          <%= table_column do %>
+            <%= check_box_tag "selected_resources[]", "customers", false, id: "customer_checkbox" %>
+          <% end %>
+          <%= table_column "Customers" %>
+          <%= table_column "Very cool customers" %>
+        <% end %>
+        <%= table_row do %>
+          <%= table_column do %>
+            <%= check_box_tag "selected_resources[]", "orders", false, id: "order_checkbox" %>
+          <% end %>
+          <%= table_column "Orders" %>
+          <%= table_column "Very cool orders" %>
+        <% end %>
       <% end %>
     <% end %>
-  <% end %>
-<% end %>
+    <div class="flex flex-row space-x-2 mt-4 items-center justify-center">
+      <%= render_button text: "Generate Sample Data", variant: :secondary, type: "submit" %>
+      <%= render_button text: "Delete Data", variant: :secondary %>
+    </div>
+  <% end %>  
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const selectAllCheckbox = document.getElementById('select_all_checkbox');
+    const checkboxes = document.querySelectorAll('input[type="checkbox"][name="selected_resources[]"]');
+
+    selectAllCheckbox.addEventListener('change', function() {
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = selectAllCheckbox.checked;
+      });
+    });
+  });
+</script>

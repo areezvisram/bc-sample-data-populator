@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :create]
 
   get '/load' => 'app#load'
+  resources :resources, only: [:create]
+
 end

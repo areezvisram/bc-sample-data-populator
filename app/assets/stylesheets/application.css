@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+ .description-column {
+    width: 50rem; /* Set the width to 50rem */
+  }

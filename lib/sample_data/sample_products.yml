@@ -62,6 +62,7 @@ products:
           - label: "M"
           - label: "L"
           - label: "XL"
+
   - name: "Stainless Steel Kitchen Knife Set"
     sku: "SSKKS-1001"
     price: 89.99
@@ -106,6 +107,7 @@ products:
         price: 94.99
         weight: 2.7
         inventory_level: 50
+
   - name: "Organic Cotton Bath Towel Set"
     sku: "OCBTS-2002"
     price: 59.99
@@ -159,3 +161,342 @@ products:
         weight: 1.3
         inventory_level: 100
 
+  - name: "Solar-Powered Garden Lights"
+    sku: "SPGL-3003"
+    price: 39.99
+    weight: 0.8
+    description: "Set of 4 solar-powered garden lights, perfect for lighting pathways and adding ambiance to outdoor spaces."
+    type: "physical"
+    inventory_tracking: "none"
+    inventory_level: 500
+    inventory_warning_level: 30
+    width: 6.0
+    height: 6.0
+    depth: 12.0
+    is_visible: true
+    is_featured: false
+    availability: "available"
+    availability_description: "Available, ships in 3-5 days"
+    condition: "New"
+    brand_id: 35
+    categories: [19, 23]  # Garden, Shop All
+    images:
+      - image_url: "https://example.com/garden-lights.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/garden-lights-night.jpg"
+    options:
+      - name: "Light Color"
+        type: "dropdown"
+        option_values:
+          - label: "Warm White"
+          - label: "Cool White"
+          - label: "Multicolor"
+    variants:
+      - sku: "SPGL-3003-WW"
+        option_values:
+          - option_display_name: "Light Color"
+            label: "Warm White"
+        price: 39.99
+        weight: 0.8
+        inventory_level: 200
+      - sku: "SPGL-3003-CW"
+        option_values:
+          - option_display_name: "Light Color"
+            label: "Cool White"
+        price: 39.99
+        weight: 0.8
+        inventory_level: 150
+      - sku: "SPGL-3003-MC"
+        option_values:
+          - option_display_name: "Light Color"
+            label: "Multicolor"
+        price: 44.99
+        weight: 0.9
+        inventory_level: 150
+
+  - name: "Digital Kitchen Scale"
+    sku: "DKS-4004"
+    price: 29.99
+    weight: 0.5
+    description: "Precision digital kitchen scale with a sleek design, perfect for measuring ingredients with accuracy."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 250
+    inventory_warning_level: 15
+    width: 8.0
+    height: 1.0
+    depth: 8.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "Ships in 24 hours"
+    condition: "New"
+    brand_id: 36
+    categories: [21, 23]  # Kitchen, Shop All
+    images:
+      - image_url: "https://example.com/kitchen-scale-black.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/kitchen-scale-stainless.jpg"
+    options:
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "Black"
+          - label: "Stainless Steel"
+          - label: "White"
+    variants:
+      - sku: "DKS-4004-BLACK"
+        option_values:
+          - option_display_name: "Color"
+            label: "Black"
+        price: 29.99
+        weight: 0.5
+        inventory_level: 100
+      - sku: "DKS-4004-STAINLESS"
+        option_values:
+          - option_display_name: "Color"
+            label: "Stainless Steel"
+        price: 32.99
+        weight: 0.6
+        inventory_level: 100
+      - sku: "DKS-4004-WHITE"
+        option_values:
+          - option_display_name: "Color"
+            label: "White"
+        price: 29.99
+        weight: 0.5
+        inventory_level: 50
+
+  - name: "Wireless Smart Thermostat"
+    sku: "WST-5005"
+    price: 149.99
+    weight: 0.7
+    description: "Control your home temperature remotely with this wireless smart thermostat, compatible with Alexa and Google Assistant."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 200
+    inventory_warning_level: 10
+    width: 6.0
+    height: 1.5
+    depth: 6.0
+    is_visible: true
+    is_featured: false
+    availability: "preorder"
+    availability_description: "Available for preorder, ships in 2 weeks"
+    condition: "New"
+    brand_id: 35
+    categories: [22, 23]  # Utility, Shop All
+    images:
+      - image_url: "https://example.com/thermostat.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/thermostat-app.jpg"
+    options:
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "White"
+          - label: "Black"
+      - name: "Smart Home Compatibility"
+        type: "dropdown"
+        option_values:
+          - label: "Alexa"
+          - label: "Google Assistant"
+    variants:
+      - sku: "WST-5005-WHITE-ALEXA"
+        option_values:
+          - option_display_name: "Color"
+            label: "White"
+          - option_display_name: "Smart Home Compatibility"
+            label: "Alexa"
+        price: 149.99
+        weight: 0.7
+        inventory_level: 100
+      - sku: "WST-5005-BLACK-GOOGLE"
+        option_values:
+          - option_display_name: "Color"
+            label: "Black"
+          - option_display_name: "Smart Home Compatibility"
+            label: "Google Assistant"
+        price: 149.99
+        weight: 0.7
+        inventory_level: 100
+
+  - name: "Ergonomic Office Chair"
+    sku: "EOC-6006"
+    price: 199.99
+    weight: 12.0
+    description: "Comfortable and supportive ergonomic office chair with adjustable height, back support, and armrests."
+    type: "physical"
+    inventory_tracking: "none"
+    inventory_level: 100
+    inventory_warning_level: 10
+    width: 28.0
+    height: 40.0
+    depth: 30.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "Ships in 1-2 days"
+    condition: "New"
+    brand_id: 37
+    categories: [23]  # Shop All (general products)
+    images:
+      - image_url: "https://example.com/office-chair-front.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/office-chair-side.jpg"
+    options:
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "Black"
+          - label: "Gray"
+          - label: "Blue"
+      - name: "Material"
+        type: "dropdown"
+        option_values:
+          - label: "Mesh"
+          - label: "Leather"
+    variants:
+      - sku: "EOC-6006-BLACK-MESH"
+        option_values:
+          - option_display_name: "Color"
+            label: "Black"
+          - option_display_name: "Material"
+            label: "Mesh"
+        price: 199.99
+        weight: 12.0
+        inventory_level: 50
+      - sku: "EOC-6006-GRAY-LEATHER"
+        option_values:
+          - option_display_name: "Color"
+            label: "Gray"
+          - option_display_name: "Material"
+            label: "Leather"
+        price: 229.99
+        weight: 13.0
+        inventory_level: 30
+      - sku: "EOC-6006-BLUE-MESH"
+        option_values:
+          - option_display_name: "Color"
+            label: "Blue"
+          - option_display_name: "Material"
+            label: "Mesh"
+        price: 199.99
+        weight: 12.5
+        inventory_level: 20
+
+  - name: "Self-Watering Herb Planter"
+    sku: "SHP-7007"
+    price: 34.99
+    weight: 2.0
+    description: "Compact self-watering herb planter for growing fresh herbs indoors or outdoors with minimal maintenance."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 200
+    inventory_warning_level: 15
+    width: 10.0
+    height: 8.0
+    depth: 10.0
+    is_visible: true
+    is_featured: false
+    availability: "available"
+    availability_description: "Ships within 48 hours"
+    condition: "New"
+    brand_id: 35
+    categories: [19, 23]  # Garden, Shop All
+    images:
+      - image_url: "https://example.com/herb-planter.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/herb-planter-closeup.jpg"
+    options:
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "White"
+          - label: "Green"
+          - label: "Terracotta"
+    variants:
+      - sku: "SHP-7007-WHITE"
+        option_values:
+          - option_display_name: "Color"
+            label: "White"
+        price: 34.99
+        weight: 2.0
+        inventory_level: 80
+      - sku: "SHP-7007-GREEN"
+        option_values:
+          - option_display_name: "Color"
+            label: "Green"
+        price: 34.99
+        weight: 2.0
+        inventory_level: 70
+      - sku: "SHP-7007-TERRACOTTA"
+        option_values:
+          - option_display_name: "Color"
+            label: "Terracotta"
+        price: 36.99
+        weight: 2.2
+        inventory_level: 50
+  - name: "Luxury Bathrobe"
+    sku: "LBR-8008"
+    price: 79.99
+    weight: 1.8
+    description: "Indulge in ultimate comfort with this plush, luxury bathrobe made from premium Egyptian cotton."
+    type: "physical"
+    inventory_tracking: "none"
+    inventory_level: 150
+    inventory_warning_level: 10
+    width: 15.0
+    height: 4.0
+    depth: 12.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "In stock, ships in 24 hours"
+    condition: "New"
+    brand_id: 36
+    categories: [18, 23]  # Bath, Shop All
+    images:
+      - image_url: "https://example.com/bathrobe-white.jpg"
+        is_thumbnail: true
+      - image_url: "https://example.com/bathrobe-closeup.jpg"
+    options:
+      - name: "Size"
+        type: "dropdown"
+        option_values:
+          - label: "Small"
+          - label: "Medium"
+          - label: "Large"
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "White"
+          - label: "Navy Blue"
+    variants:
+      - sku: "LBR-8008-S-WHITE"
+        option_values:
+          - option_display_name: "Size"
+            label: "Small"
+          - option_display_name: "Color"
+            label: "White"
+        price: 79.99
+        weight: 1.5
+        inventory_level: 50
+      - sku: "LBR-8008-M-NAVY"
+        option_values:
+          - option_display_name: "Size"
+            label: "Medium"
+          - option_display_name: "Color"
+            label: "Navy Blue"
+        price: 84.99
+        weight: 1.8
+        inventory_level: 50
+      - sku: "LBR-8008-L-WHITE"
+        option_values:
+          - option_display_name: "Size"
+            label: "Large"
+          - option_display_name: "Color"
+            label: "White"
+        price: 79.99
+        weight: 2.0
+        inventory_level: 50
