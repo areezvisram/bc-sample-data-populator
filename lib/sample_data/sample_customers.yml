@@ -1,0 +1,189 @@
+customers:
+  - email: john.doe@example.com
+    first_name: John
+    last_name: Doe
+    company: Acme Corp
+    phone: 123-456-7890
+    notes: Frequent buyer
+    tax_exempt_category: resale
+    addresses:
+      - address1: 123 Main St
+        address2: Apt 4B
+        address_type: residential
+        city: San Francisco
+        company: Acme Corp
+        country_code: US
+        first_name: John
+        last_name: Doe
+        phone: 123-456-7890
+        postal_code: "94101"
+        state_or_province: California
+    authentication:
+      force_password_reset: false
+      new_password: password123
+    accepts_product_review_abandoned_cart_emails: true
+    trigger_account_created_notification: true
+    store_credit_amounts:
+      - amount: 25.00
+
+  - email: jane.smith@example.com
+    first_name: Jane
+    last_name: Smith
+    company: Widget Co
+    phone: 987-654-3210
+    notes: Interested in bulk discounts
+    tax_exempt_category: none
+    addresses:
+      - address1: 456 Elm St
+        address2: 
+        address_type: residential
+        city: Los Angeles
+        company: Widget Co
+        country_code: US
+        first_name: Jane
+        last_name: Smith
+        phone: 987-654-3210
+        postal_code: "90001"
+        state_or_province: California
+    authentication:
+      force_password_reset: true
+      new_password: securepassword456
+    accepts_product_review_abandoned_cart_emails: false
+    trigger_account_created_notification: true
+    store_credit_amounts:
+      - amount: 50.75
+
+  - email: tom.jones@example.com
+    first_name: Tom
+    last_name: Jones
+    company: Tech Solutions
+    phone: 555-123-4567
+    notes: Prefers email communication
+    tax_exempt_category: none
+    addresses:
+      - address1: 789 Oak St
+        address2: Suite 5
+        address_type: residential
+        city: New York
+        company: Tech Solutions
+        country_code: US
+        first_name: Tom
+        last_name: Jones
+        phone: 555-123-4567
+        postal_code: "10001"
+        state_or_province: New York
+    authentication:
+      force_password_reset: false
+      new_password: password789
+    accepts_product_review_abandoned_cart_emails: true
+    trigger_account_created_notification: false
+    store_credit_amounts:
+      - amount: 0.00
+
+  - email: alice.brown@example.com
+    first_name: Alice
+    last_name: Brown
+    company: Brown Industries
+    phone: 222-333-4444
+    notes: Likes to be notified about new arrivals
+    tax_exempt_category: wholesale
+    addresses:
+      - address1: 321 Pine St
+        address2: 
+        address_type: residential
+        city: Chicago
+        company: Brown Industries
+        country_code: US
+        first_name: Alice
+        last_name: Brown
+        phone: 222-333-4444
+        postal_code: "60601"
+        state_or_province: Illinois
+    authentication:
+      force_password_reset: true
+      new_password: mypassword321
+    accepts_product_review_abandoned_cart_emails: true
+    trigger_account_created_notification: true
+    store_credit_amounts:
+      - amount: 12.34
+
+  - email: bob.white@example.com
+    first_name: Bob
+    last_name: White
+    company: White Enterprises
+    phone: 888-777-6666
+    notes: Rarely returns items
+    tax_exempt_category: none
+    addresses:
+      - address1: 654 Maple St
+        address2: 
+        address_type: residential
+        city: Miami
+        company: White Enterprises
+        country_code: US
+        first_name: Bob
+        last_name: White
+        phone: 888-777-6666
+        postal_code: "33101"
+        state_or_province: Florida
+    authentication:
+      force_password_reset: false
+      new_password: bobspassword123
+    accepts_product_review_abandoned_cart_emails: false
+    trigger_account_created_notification: false
+    store_credit_amounts:
+      - amount: 0.00
+
+  - email: mary.johnson@example.com
+    first_name: Mary
+    last_name: Johnson
+    company: Johnson Supplies
+    phone: 444-555-6666
+    notes: Prefers phone communication
+    tax_exempt_category: none
+    addresses:
+      - address1: 321 Birch St
+        address2: 
+        address_type: residential
+        city: Houston
+        company: Johnson Supplies
+        country_code: US
+        first_name: Mary
+        last_name: Johnson
+        phone: 444-555-6666
+        postal_code: "77001"
+        state_or_province: Texas
+    authentication:
+      force_password_reset: true
+      new_password: password456
+    accepts_product_review_abandoned_cart_emails: true
+    trigger_account_created_notification: true
+    store_credit_amounts:
+      - amount: 30.00
+
+  - email: sarah.lee@example.com
+    first_name: Sarah
+    last_name: Lee
+    company: Lee Retail
+    phone: 555-222-3333
+    notes: Interested in promotions
+    tax_exempt_category: none
+    addresses:
+      - address1: 987 Cedar St
+        address2: 
+        address_type: residential
+        city: Seattle
+        company: Lee Retail
+        country_code: US
+        first_name: Sarah
+        last_name: Lee
+        phone: 555-222-3333
+        postal_code: "98101"
+        state_or_province: Washington
+    authentication:
+      force_password_reset: false
+      new_password: sarahspassword123
+    accepts_product_review_abandoned_cart_emails: true
+    trigger_account_created_notification: true
+    store_credit_amounts:
+      - amount: 5.00

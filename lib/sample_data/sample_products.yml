@@ -16,12 +16,12 @@ products:
     availability: "available"
     availability_description: "Ships within 24 hours"
     condition: "New"
-    brand_id: 34
+    brand_id: 35
     categories: [23]
     images:
-      - image_url: "https://example.com/jacket-front.jpg"
+      - image_url: https://media.istockphoto.com/id/157692462/photo/front-of-black-leather-jacket-isolated-on-white-w-clipping-path.jpg?s=612x612&w=0&k=20&c=Dt9BAaU1O38SuIQEpoJoOQu0OcX-9za-DRD1MfIbOnw=
         is_thumbnail: true
-      - image_url: "https://example.com/jacket-back.jpg"
+      - image_url: https://media.istockphoto.com/id/885931726/photo/classic-black-leather-bikers-jacket-with-lining-shot-from-the-front-and-the-back-isolated-on.jpg?s=612x612&w=0&k=20&c=RIK79l_iwY--DXrpNHW_uNgzZqQKPHK7bnmtvBVXNfY=
     variants:
       - sku: "PLJ-2024-BLACK-M"
         option_values:
@@ -83,9 +83,9 @@ products:
     brand_id: 37
     categories: [21, 23]
     images:
-      - image_url: "https://example.com/knife-set.jpg"
+      - image_url: "https://thepaisleybox.com/assets/Knife-set-lifestyle.jpg"
         is_thumbnail: true
-      - image_url: "https://example.com/knife-set-closeup.jpg"
+      - image_url: "https://i5.walmartimages.com/seo/Schmidt-Brothers-Cutlery-14-Piece-Acacia-Forged-Stainless-Steel-Knife-Block-Set-Acacia-Wood-Handle_8a743995-73f7-46e4-8c72-c6149f74ae54.47983268ecef1964ffa567ca11131a73.jpeg?odnHeight=50px&odnWidth=50px&odnBg=FFFFFF"
     options:
       - name: "Handle Color"
         type: "dropdown"
@@ -128,16 +128,15 @@ products:
     brand_id: 36
     categories: [18, 23]  # Bath, Shop All
     images:
-      - image_url: "https://example.com/towel-set-white.jpg"
+      - image_url: "https://www.shutterstock.com/image-photo/3-piece-plush-bath-towels-600nw-2153323355.jpg"
         is_thumbnail: true
-      - image_url: "https://example.com/towel-set-gray.jpg"
+      - image_url: "https://i5.walmartimages.com/seo/Schmidt-Brothers-Cutlery-14-Piece-Acacia-Forged-Stainless-Steel-Knife-Block-Set-Acacia-Wood-Handle_8a743995-73f7-46e4-8c72-c6149f74ae54.47983268ecef1964ffa567ca11131a73.jpeg?odnHeight=50px&odnWidth=50px&odnBg=FFFFFF"            
     options:
       - name: "Color"
         type: "dropdown"
         option_values:
           - label: "White"
-          - label: "Gray"
-          - label: "Beige"
+          - label: "Blue"          
     variants:
       - sku: "OCBTS-2002-WHITE"
         option_values:
@@ -146,19 +145,12 @@ products:
         price: 59.99
         weight: 1.2
         inventory_level: 100
-      - sku: "OCBTS-2002-GRAY"
+      - sku: "OCBTS-2002-Blue"
         option_values:
           - option_display_name: "Color"
-            label: "Gray"
+            label: "Blue"
         price: 59.99
         weight: 1.2
-        inventory_level: 100
-      - sku: "OCBTS-2002-BEIGE"
-        option_values:
-          - option_display_name: "Color"
-            label: "Beige"
-        price: 64.99
-        weight: 1.3
         inventory_level: 100
 
   - name: "Solar-Powered Garden Lights"
@@ -181,9 +173,9 @@ products:
     brand_id: 35
     categories: [19, 23]  # Garden, Shop All
     images:
-      - image_url: "https://example.com/garden-lights.jpg"
+      - image_url: "https://images.squarespace-cdn.com/content/v1/56feae0ab6aa60ebb6039bf3/1608127444416-6XNKOSTH1GNKE6WNVYGV/GettyImages-629434366.jpg"
         is_thumbnail: true
-      - image_url: "https://example.com/garden-lights-night.jpg"
+      - image_url: "https://t4.ftcdn.net/jpg/05/18/99/51/360_F_518995193_K1lxCUKFGi5NmIE3v4Qw7PzQ8J26o7wz.jpg"
     options:
       - name: "Light Color"
         type: "dropdown"
@@ -234,9 +226,8 @@ products:
     brand_id: 36
     categories: [21, 23]  # Kitchen, Shop All
     images:
-      - image_url: "https://example.com/kitchen-scale-black.jpg"
-        is_thumbnail: true
-      - image_url: "https://example.com/kitchen-scale-stainless.jpg"
+      - image_url: "https://media.istockphoto.com/id/1446858315/photo/digital-kitchen-scale-with-unit-buttons-3d-vector-rendering.jpg?s=612x612&w=0&k=20&c=OzMyRpa6n9mICKetGUIvDseE9LmthzQUsDebR_5z5LA="
+        is_thumbnail: true      
     options:
       - name: "Color"
         type: "dropdown"
@@ -287,9 +278,9 @@ products:
     brand_id: 35
     categories: [22, 23]  # Utility, Shop All
     images:
-      - image_url: "https://example.com/thermostat.jpg"
+      - image_url: "https://bmmagazine.co.uk/wp-content/uploads/2022/01/shutterstock_1580534578-scaled.jpg"
         is_thumbnail: true
-      - image_url: "https://example.com/thermostat-app.jpg"
+      - image_url: "https://www.maertinheating.com/wp-content/uploads/2020/11/Smart-Thermostat-maertin-heating.jpg"
     options:
       - name: "Color"
         type: "dropdown"
@@ -341,9 +332,9 @@ products:
     brand_id: 37
     categories: [23]  # Shop All (general products)
     images:
-      - image_url: "https://example.com/office-chair-front.jpg"
+      - image_url: "https://assets.costway.ca/media/catalog/product/cache/0/small_image/360x/9df78eab33525d08d6e5fb8d27136e95/c/b/1681380172_cb10140dk_12__1_1.jpg"
         is_thumbnail: true
-      - image_url: "https://example.com/office-chair-side.jpg"
+      - image_url: "https://assets.costway.ca/media/catalog/product/cache/0/small_image/360x/9df78eab33525d08d6e5fb8d27136e95/c/CB10623DK/1719574150_Adjustable_Swivel_Task_Chair_Ergonomic_Office_Chair_with_Adjustable_Lumbar_Support_Black-3.jpg"
     options:
       - name: "Color"
         type: "dropdown"
@@ -405,9 +396,9 @@ products:
     brand_id: 35
     categories: [19, 23]  # Garden, Shop All
     images:
-      - image_url: "https://example.com/herb-planter.jpg"
+      - image_url: "https://thumbs.dreamstime.com/b/indoor-herb-garden-sunny-windowsill-small-scale-gardening-easy-self-watering-planters-seed-pods-microgreen-kits-323678784.jpg"
         is_thumbnail: true
-      - image_url: "https://example.com/herb-planter-closeup.jpg"
+      - image_url: "https://cdn.mos.cms.futurecdn.net/EDQZb9Aj2JeFsLc5j72jei.jpg"
     options:
       - name: "Color"
         type: "dropdown"
@@ -437,6 +428,7 @@ products:
         price: 36.99
         weight: 2.2
         inventory_level: 50
+
   - name: "Luxury Bathrobe"
     sku: "LBR-8008"
     price: 79.99
@@ -457,9 +449,9 @@ products:
     brand_id: 36
     categories: [18, 23]  # Bath, Shop All
     images:
-      - image_url: "https://example.com/bathrobe-white.jpg"
+      - image_url: "https://media.gettyimages.com/id/113709403/photo/a-white-hung-up-bathrobe-on-a-grey-wall.jpg?s=612x612&w=gi&k=20&c=Q6Mh8hPPR3jB-AB-oqNAdyWCly9SHxpcZJ-iSJnLqkk="
         is_thumbnail: true
-      - image_url: "https://example.com/bathrobe-closeup.jpg"
+      - image_url: "https://www.shutterstock.com/image-photo/bathrobe-mockup-empty-plush-dressing-260nw-2315457685.jpg"
     options:
       - name: "Size"
         type: "dropdown"
@@ -471,7 +463,7 @@ products:
         type: "dropdown"
         option_values:
           - label: "White"
-          - label: "Navy Blue"
+          - label: "Pink"
     variants:
       - sku: "LBR-8008-S-WHITE"
         option_values:
@@ -482,12 +474,12 @@ products:
         price: 79.99
         weight: 1.5
         inventory_level: 50
-      - sku: "LBR-8008-M-NAVY"
+      - sku: "LBR-8008-M-Pink"
         option_values:
           - option_display_name: "Size"
             label: "Medium"
           - option_display_name: "Color"
-            label: "Navy Blue"
+            label: "Pink"
         price: 84.99
         weight: 1.8
         inventory_level: 50
@@ -500,3 +492,400 @@ products:
         price: 79.99
         weight: 2.0
         inventory_level: 50
+    
+  - name: "Stainless Steel Water Bottle"
+    sku: "SSWB-9009"
+    price: 24.99
+    weight: 0.7
+    description: "Durable and eco-friendly stainless steel water bottle with double-wall insulation to keep beverages hot or cold for hours."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 300
+    inventory_warning_level: 20
+    width: 3.0
+    height: 10.0
+    depth: 3.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "Ships in 1-2 days"
+    condition: "New"
+    brand_id: 35
+    categories: [22, 23]  # Utility, Shop All
+    images:
+      - image_url: "https://media.istockphoto.com/id/1423379549/vector/blank-metal-insulated-water-bottle-vector-mockup-reusable-stainless-steel-travel-sport-flask.jpg?s=612x612&w=0&k=20&c=mXeJNB9xF7jh2Q8mGxkuenoyhEcgxdaBx9BaffVDb6k="
+        is_thumbnail: true
+      - image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Qe8XzNYkOIBqSh2mX_HII-aiv5LD7euKqw&s"
+    options:
+      - name: "Size"
+        type: "dropdown"
+        option_values:
+          - label: "500ml"
+          - label: "750ml"
+          - label: "1L"
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "Silver"
+          - label: "Matte Black"
+          - label: "Blue"
+    variants:
+      - sku: "SSWB-9009-500-SILVER"
+        option_values:
+          - option_display_name: "Size"
+            label: "500ml"
+          - option_display_name: "Color"
+            label: "Silver"
+        price: 24.99
+        weight: 0.5
+        inventory_level: 100
+      - sku: "SSWB-9009-750-BLACK"
+        option_values:
+          - option_display_name: "Size"
+            label: "750ml"
+          - option_display_name: "Color"
+            label: "Matte Black"
+        price: 29.99
+        weight: 0.7
+        inventory_level: 100
+      - sku: "SSWB-9009-1L-BLUE"
+        option_values:
+          - option_display_name: "Size"
+            label: "1L"
+          - option_display_name: "Color"
+            label: "Blue"
+        price: 34.99
+        weight: 1.0
+        inventory_level: 100
+  
+  - name: "Solar-Powered Outdoor Lantern"
+    sku: "SOL-18018"
+    price: 59.99
+    weight: 3.0
+    description: "Eco-friendly solar-powered outdoor lantern with adjustable brightness and weather-resistant design, ideal for garden or patio lighting."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 120
+    inventory_warning_level: 10
+    width: 10.0
+    height: 12.0
+    depth: 10.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "Ships within 2-3 business days"
+    condition: "New"
+    brand_id: 36
+    categories: [19, 23]  # Garden, Shop All
+    images:
+      - image_url: "https://img.freepik.com/premium-photo/solar-powered-outdoor-lantern_1111059-10787.jpg"
+        is_thumbnail: true
+    options:
+      - name: "Light Color"
+        type: "dropdown"
+        option_values:
+          - label: "Warm White"
+          - label: "Cool White"
+          - label: "RGB"
+      - name: "Brightness Level"
+        type: "dropdown"
+        option_values:
+          - label: "Low"
+          - label: "Medium"
+          - label: "High"
+    variants:
+      - sku: "SOL-18018-WARM-MED"
+        option_values:
+          - option_display_name: "Light Color"
+            label: "Warm White"
+          - option_display_name: "Brightness Level"
+            label: "Medium"
+        price: 59.99
+        weight: 3.0
+        inventory_level: 40
+      - sku: "SOL-18018-COOL-HIGH"
+        option_values:
+          - option_display_name: "Light Color"
+            label: "Cool White"
+          - option_display_name: "Brightness Level"
+            label: "High"
+        price: 69.99
+        weight: 3.2
+        inventory_level: 40
+      - sku: "SOL-18018-RGB-LOW"
+        option_values:
+          - option_display_name: "Light Color"
+            label: "RGB"
+          - option_display_name: "Brightness Level"
+            label: "Low"
+        price: 49.99
+        weight: 2.8
+        inventory_level: 40
+  
+  - name: "Cordless Electric Drill"
+    sku: "CED-12012"
+    price: 129.99
+    weight: 4.5
+    description: "Powerful and lightweight cordless electric drill with variable speed control, perfect for all household and DIY projects."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 120
+    inventory_warning_level: 10
+    width: 8.0
+    height: 10.0
+    depth: 4.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "Ships within 1 business day"
+    condition: "New"
+    brand_id: 35
+    categories: [22, 23]  # Utility, Shop All
+    images:
+      - image_url: "https://www.shutterstock.com/image-photo/modern-cordless-electric-drill-sawdust-600nw-2493652187.jpg"
+        is_thumbnail: true
+      - image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGQ9kq-MWyPi_UsrS0BcW_m6kh9KE_keidOQ&s"
+    options:
+      - name: "Battery Capacity"
+        type: "dropdown"
+        option_values:
+          - label: "1.5Ah"
+          - label: "2.0Ah"
+          - label: "2.5Ah"
+      - name: "Speed Settings"
+        type: "dropdown"
+        option_values:
+          - label: "Single Speed"
+          - label: "Variable Speed"
+    variants:
+      - sku: "CED-12012-15AH-SPEED"
+        option_values:
+          - option_display_name: "Battery Capacity"
+            label: "1.5Ah"
+          - option_display_name: "Speed Settings"
+            label: "Single Speed"
+        price: 129.99
+        weight: 4.0
+        inventory_level: 60
+      - sku: "CED-12012-20AH-VSPEED"
+        option_values:
+          - option_display_name: "Battery Capacity"
+            label: "2.0Ah"
+          - option_display_name: "Speed Settings"
+            label: "Variable Speed"
+        price: 149.99
+        weight: 4.5
+        inventory_level: 30
+      - sku: "CED-12012-25AH-VSPEED"
+        option_values:
+          - option_display_name: "Battery Capacity"
+            label: "2.5Ah"
+          - option_display_name: "Speed Settings"
+            label: "Variable Speed"
+        price: 169.99
+        weight: 5.0
+        inventory_level: 30
+  
+  - name: "Cast Iron Skillet Set"
+    sku: "CISS-13013"
+    price: 99.99
+    weight: 8.5
+    description: "Durable, pre-seasoned cast iron skillet set including 8-inch, 10-inch, and 12-inch pans for versatile cooking on any heat source."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 100
+    inventory_warning_level: 10
+    width: 12.0
+    height: 5.0
+    depth: 12.0
+    is_visible: true
+    is_featured: false
+    availability: "available"
+    availability_description: "Ships within 1-2 days"
+    condition: "New"
+    brand_id: 37
+    categories: [21, 23]  # Kitchen, Shop All
+    images:
+      - image_url: "https://www.chowhound.com/img/gallery/12-myths-about-cast-iron-skillets-debunked/you-should-soak-your-cast-iron-skillet-1709223519.jpg"
+        is_thumbnail: true
+      - image_url: "https://t3.ftcdn.net/jpg/07/35/18/78/360_F_735187898_vpNZ00jI3TNgZhpjYVNjnbuMNB9cZH97.jpg"
+    options:
+      - name: "Skillet Size"
+        type: "dropdown"
+        option_values:
+          - label: "8-inch"
+          - label: "10-inch"
+          - label: "12-inch"
+      - name: "Lid Included"
+        type: "radio_buttons"
+        option_values:
+          - label: "Yes"
+          - label: "No"
+    variants:
+      - sku: "CISS-13013-8-LIDYES"
+        option_values:
+          - option_display_name: "Skillet Size"
+            label: "8-inch"
+          - option_display_name: "Lid Included"
+            label: "Yes"
+        price: 79.99
+        weight: 6.0
+        inventory_level: 40
+      - sku: "CISS-13013-10-LIDNO"
+        option_values:
+          - option_display_name: "Skillet Size"
+            label: "10-inch"
+          - option_display_name: "Lid Included"
+            label: "No"
+        price: 89.99
+        weight: 7.5
+        inventory_level: 30
+      - sku: "CISS-13013-12-LIDYES"
+        option_values:
+          - option_display_name: "Skillet Size"
+            label: "12-inch"
+          - option_display_name: "Lid Included"
+            label: "Yes"
+        price: 99.99
+        weight: 8.5
+        inventory_level: 30
+  
+  - name: "Smart Garden Planter"
+    sku: "SGP-14014"
+    price: 149.99
+    weight: 10.0
+    description: "Self-watering smart garden planter with integrated LED grow lights, perfect for growing herbs and vegetables indoors."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 80
+    inventory_warning_level: 5
+    width: 15.0
+    height: 12.0
+    depth: 15.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "Ships within 3-4 business days"
+    condition: "New"
+    brand_id: 36
+    categories: [19, 23]  # Garden, Shop All
+    images:
+      - image_url: "https://www.nussgraduate.org/wp-content/uploads/2023/06/Gardening-Picture-Final-scaled.jpg"
+        is_thumbnail: true
+    options:
+      - name: "Planter Color"
+        type: "dropdown"
+        option_values:
+          - label: "White"
+          - label: "Green"
+          - label: "Charcoal"
+      - name: "Size"
+        type: "dropdown"
+        option_values:
+          - label: "Small"
+          - label: "Large"
+    variants:
+      - sku: "SGP-14014-WHITE-SMALL"
+        option_values:
+          - option_display_name: "Planter Color"
+            label: "White"
+          - option_display_name: "Size"
+            label: "Small"
+        price: 149.99
+        weight: 8.0
+        inventory_level: 40
+      - sku: "SGP-14014-GREEN-LARGE"
+        option_values:
+          - option_display_name: "Planter Color"
+            label: "Green"
+          - option_display_name: "Size"
+            label: "Large"
+        price: 169.99
+        weight: 12.0
+        inventory_level: 20
+      - sku: "SGP-14014-CHARCOAL-LARGE"
+        option_values:
+          - option_display_name: "Planter Color"
+            label: "Charcoal"
+          - option_display_name: "Size"
+            label: "Large"
+        price: 169.99
+        weight: 12.0
+        inventory_level: 20
+  
+  - name: "Bluetooth Speaker with LED Lights"
+    sku: "BSP-16016"
+    price: 79.99
+    weight: 2.0
+    description: "Portable Bluetooth speaker with dynamic LED lights, delivering high-quality sound with a 12-hour battery life. Perfect for indoor and outdoor use."
+    type: "physical"
+    inventory_tracking: "variant"
+    inventory_level: 150
+    inventory_warning_level: 15
+    width: 6.0
+    height: 8.0
+    depth: 4.0
+    is_visible: true
+    is_featured: true
+    availability: "available"
+    availability_description: "Ships in 1-2 business days"
+    condition: "New"
+    brand_id: 35
+    categories: [22, 23]  # Utility, Shop All
+    images:
+      - image_url: "https://cdn.shopify.com/s/files/1/0603/4296/0348/files/Frame1.png?v=1706856434"
+        is_thumbnail: true
+      - image_url: "https://media.gettyimages.com/id/1414400069/photo/portable-wireless-speaker-isolated-on-white-background-black-sound-speaker-with-ribbed.jpg?s=612x612&w=gi&k=20&c=5pbGm7lqZBPtNhxdamIfZov7j9FsoCjehrbQ6af69oA="
+    options:
+      - name: "Color"
+        type: "dropdown"
+        option_values:
+          - label: "Black"
+          - label: "Red"
+          - label: "Blue"
+      - name: "Lighting Mode"
+        type: "radio_buttons"
+        option_values:
+          - label: "Static"
+          - label: "Dynamic"
+      - name: "Battery Life"
+        type: "dropdown"
+        option_values:
+          - label: "8 hours"
+          - label: "12 hours"
+    variants:
+      - sku: "BSP-16016-BLACK-STATIC-8H"
+        option_values:
+          - option_display_name: "Color"
+            label: "Black"
+          - option_display_name: "Lighting Mode"
+            label: "Static"
+          - option_display_name: "Battery Life"
+            label: "8 hours"
+        price: 69.99
+        weight: 1.8
+        inventory_level: 50
+      - sku: "BSP-16016-RED-DYNAMIC-12H"
+        option_values:
+          - option_display_name: "Color"
+            label: "Red"
+          - option_display_name: "Lighting Mode"
+            label: "Dynamic"
+          - option_display_name: "Battery Life"
+            label: "12 hours"
+        price: 89.99
+        weight: 2.0
+        inventory_level: 50
+      - sku: "BSP-16016-BLUE-DYNAMIC-12H"
+        option_values:
+          - option_display_name: "Color"
+            label: "Blue"
+          - option_display_name: "Lighting Mode"
+            label: "Dynamic"
+          - option_display_name: "Battery Life"
+            label: "12 hours"
+        price: 89.99
+        weight: 2.0
+        inventory_level: 50
+
+

@@ -2,7 +2,8 @@
   <div class="text-xl font-bold">Generate Sample Data</div>
   <%= render_alert(variant: :attention, title:'Note', description: "This app will generate a selected set of items in this store. This data should be used for testing and development purposes only and is not intended for production stores") %>
   <%= link_to 'View Products', products_path %>
-  <%= link_to 'Create Product', products_create_path %>
+  <%= link_to 'Create Products', products_create_path %>
+  <%= link_to 'Create Customers', customers_create_path %>
 
   <%= form_with url: resources_path, method: :post, local: true, data: { turbo: false } do %>
     <%= render_table do %>
