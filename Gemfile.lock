@@ -103,6 +103,8 @@ GEM
     drb (2.2.1)
     error_highlight (0.6.0)
     erubi (1.13.0)
+    faker (3.4.2)
+      i18n (>= 1.8.11, < 2)
     faraday (0.17.6)
       multipart-post (>= 1.2, < 3)
     globalid (1.2.1)
@@ -284,6 +286,7 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
+  faker
   httparty
   importmap-rails
   jbuilder

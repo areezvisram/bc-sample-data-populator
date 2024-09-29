@@ -3,7 +3,10 @@
   <%= render_alert(variant: :attention, title:'Note', description: "This app will generate a selected set of items in this store. This data should be used for testing and development purposes only and is not intended for production stores") %>
   <%= link_to 'View Products', products_path %>
   <%= link_to 'Create Products', products_create_path %>
+  <%= link_to 'View Customers', customers_path %>
   <%= link_to 'Create Customers', customers_create_path %>
+  <%= link_to 'View Orders', orders_path %>
+  <%= link_to 'Create Orders', orders_create_path %>
 
   <%= form_with url: resources_path, method: :post, local: true, data: { turbo: false } do %>
     <%= render_table do %>
@@ -39,8 +42,10 @@
       <% end %>
     <% end %>
     <div class="flex flex-row space-x-2 mt-4 items-center justify-center">
-      <%= render_button text: "Generate Sample Data", variant: :secondary, type: "submit" %>
-      <%= render_button text: "Delete Data", variant: :secondary %>
+      <%= render_button text: "Generate Sample Data", variant: :secondary, type: "submit" %>      
+      <%= form_with url: resources_path, method: :delete, data: { turbo: false, confirm: "Are you sure you want to delete all data?" } do %>
+        <%= render_button text: "Delete Data", variant: :secondary, type: "submit" %>
+      <% end %>
     </div>
   <% end %>  
 </div>
