@@ -1,12 +1,6 @@
-<div class="flex flex-col items-center w-1/2 mx-auto mt-20">
+<div class="flex flex-col items-center mx-auto mt-20">
   <div class="text-xl font-bold">Generate Sample Data</div>
-  <%= render_alert(variant: :attention, title:'Note', description: "This app will generate a selected set of items in this store. This data should be used for testing and development purposes only and is not intended for production stores") %>
-  <%= link_to 'View Products', products_path %>
-  <%= link_to 'Create Products', products_create_path %>
-  <%= link_to 'View Customers', customers_path %>
-  <%= link_to 'Create Customers', customers_create_path %>
-  <%= link_to 'View Orders', orders_path %>
-  <%= link_to 'Create Orders', orders_create_path %>
+  <%= render_alert(variant: :attention, title:'This app will generate a selected set of items in this store', description: "This data should be used for testing and development purposes only and is not intended for production stores") %>
 
   <%= form_with url: resources_path, method: :post, local: true, data: { turbo: false } do %>
     <%= render_table do %>
@@ -23,42 +17,55 @@
             <%= check_box_tag "selected_resources[]", "products", false, id: "product_checkbox" %>
           <% end %>
           <%= table_column "Products" %>
-          <%= table_column "15 products with multiple variants" %>
+          <%= table_column "15 products with various properties, images, options and variants" %>
         <% end %>
         <%= table_row do %>
           <%= table_column do %>
             <%= check_box_tag "selected_resources[]", "customers", false, id: "customer_checkbox" %>
           <% end %>
           <%= table_column "Customers" %>
-          <%= table_column "Very cool customers" %>
+          <%= table_column "7 customers with various properties" %>
         <% end %>
         <%= table_row do %>
           <%= table_column do %>
             <%= check_box_tag "selected_resources[]", "orders", false, id: "order_checkbox" %>
           <% end %>
           <%= table_column "Orders" %>
-          <%= table_column "Very cool orders" %>
+          <%= table_column "7 orders with various properties, based on sample customers and products" %>
         <% end %>
       <% end %>
     <% end %>
-    <div class="flex flex-row space-x-2 mt-4 items-center justify-center">
-      <%= render_button text: "Generate Sample Data", variant: :secondary, type: "submit" %>      
-      <%= form_with url: resources_path, method: :delete, data: { turbo: false, confirm: "Are you sure you want to delete all data?" } do %>
-        <%= render_button text: "Delete Data", variant: :secondary, type: "submit" %>
-      <% end %>
+    
+    <div class="flex flex-row space-x-2 mt-4 items-center justify-center" style="margin-right: 160px;">
+      <%= render_button text: "Generate Sample Data", variant: :secondary, type: "submit" %>
     </div>
-  <% end %>  
+  <% end %>
+
+  <%= form_with url: resources_path, method: :delete, data: { turbo: false, confirm: "Are you sure you want to delete all data?" } do %>
+    <div class="flex flex-row space-x-2 mt-4 ml-4 items-center justify-center" style="margin-top: -40px; margin-left:160px">
+      <%= render_button text: "Delete Data", variant: :secondary, type: "submit" %>
+    </div>
+  <% end %>
 </div>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const selectAllCheckbox = document.getElementById('select_all_checkbox');
+    const orderCheckbox = document.getElementById('order_checkbox');
     const checkboxes = document.querySelectorAll('input[type="checkbox"][name="selected_resources[]"]');
 
     selectAllCheckbox.addEventListener('change', function() {
       checkboxes.forEach(checkbox => {
         checkbox.checked = selectAllCheckbox.checked;
       });
+    });
+
+    orderCheckbox.addEventListener('change', function() {
+      if (orderCheckbox.checked) {
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = true;
+        });
+      }
     });
   });
 </script>
