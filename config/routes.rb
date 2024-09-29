@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
-  get 'products/index'
-  get 'products/create'
-  get 'customers/create'
-  get 'customers/index'
-  get 'orders/index'
-  get 'orders/create'
   get 'app/index'
   get 'sessions/create'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -23,14 +17,8 @@ Rails.application.routes.draw do
   match '/auth/failure', to: redirect('/'), via: [:get, :post]
 
 
-  resources :products, only: [:index, :create]
-  resources :customers, only: [:index, :create]
-  resources :orders, only: [:index, :create]
-
   get '/load' => 'app#load'
   resources :resources, only: [:create] do
     delete :destroy, on: :collection
   end
-  
-
 end
