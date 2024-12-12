@@ -1,8 +1,7 @@
 class ResourcesController < ApplicationController
   def create
     client = BigCommerceClient.new(session[:access_token], session[:store_hash])
-    selected_resources = params[:selected_resources] || []
-    puts selected_resources
+    selected_resources = params[:selected_resources] || []    
     if selected_resources.include?("products")
       BigCommerce::Products.new(client).populate_sample_products
     end
